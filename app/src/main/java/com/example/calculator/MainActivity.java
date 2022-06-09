@@ -64,11 +64,8 @@ public class MainActivity extends AppCompatActivity {
 
             Calculation calculation = new Calculation();
             calculation.setCalculation(opr1.getText().toString(), opr2.getText().toString(), Double.toString(result + rangeCorrection ));
+            
             mCalculationViewModel.insert(calculation);
-        }
-        else{
-            Toast toast= Toast.makeText(MainActivity.this,"Enter The Required Numbers",Toast.LENGTH_LONG);
-            toast.show();
         }
     }
 
